@@ -1,3 +1,4 @@
+
 function onesCounter(input) {
   let count = 0;
   let output = [];
