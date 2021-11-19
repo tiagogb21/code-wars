@@ -5,13 +5,12 @@ function isPrime(value){
   }
   return true;
 }
-
-function step(n) {
+function prime(n) {
   let m = 3;
   let prime = [2];
   while (m <= n) {
     if(isPrime(m)) prime.push(m);
     m+=1;
   }
-  return prime[prime.length-1];
+  return prime;
 }
