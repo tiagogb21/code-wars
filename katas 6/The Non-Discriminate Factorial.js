@@ -7,3 +7,10 @@ function factorial(n) {
   }
   return n % 2 !== 0 ? factorial*n : factorial*a;
 }
+
+function narcissistic(value) {
+  let valueToString = value.toString();
+  let valueLength = valueToString.length;
+  let arrayOfValue = valueToString.split('');
+  return arrayOfValue.reduce((acc,curr) => acc + Number(curr) ** valueLength, 0) === value;
+}
